@@ -1,16 +1,32 @@
-body{
-    margin: 5px;
-    background: pink;
-    text-align: center;
+body {
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    height: 100vh;
 }
 
-.button {
-    transition-duration: 0.4s;
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
-.button:hover {
-    background-color: #4CAF50; /* Green */
-    color: greenyellow;
+
+button {
+    background-color: #4762ee;
+    color: black;
+    font-size: 15px;
+    margin: 0 auto;
+}
+div {
+    display: flex;
+    justify-content: center;
 }
 
 html {
@@ -39,12 +55,4 @@ form label {
 
 form input {
     width: 300px;
-}
-
-form p {
-    display: table-caption;
-    caption-side: bottom;
-    width: 300px;
-    color: #f601fd;
-    font-style: italic;
 }
